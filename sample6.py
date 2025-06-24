@@ -2,8 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib
-import matplotlib.font_manager as fm
-
+import matplotlib.pyplot as plt
 # 한글 폰트 설정
 matplotlib.rcParams['font.family'] = 'NanumGothic'
 
