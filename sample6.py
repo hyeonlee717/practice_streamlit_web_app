@@ -84,7 +84,7 @@ st.session_state.risk_percent = int(np.clip(st.session_state.risk_percent, 1, 50
 
 # 위젯
 new_win_rate = st.number_input("승률 (%)", min_value=0, max_value=100, step=1, value=st.session_state.win_rate, key="win_input")
-new_risk_percent = st.number_input("리스크 비율 (%)", min_value=1, max_value=100, step=1, value=st.session_state.risk_percent, key="risk_input")
+new_risk_percent = st.number_input("리스크 비율 (%) -> 손익비 1, Take Profit & Stop Loss 동일", min_value=1, max_value=100, step=1, value=st.session_state.risk_percent, key="risk_input")
 
 # 값이 바뀌면 자동 반영
 if new_win_rate != st.session_state.win_rate or new_risk_percent != st.session_state.risk_percent:
