@@ -2,10 +2,12 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib
-import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 
-# 한글 폰트 설정 (MacOS용 예시: AppleGothic)
-matplotlib.rc('font', family='AppleGothic')
+# 한글 폰트 설정
+matplotlib.rcParams['font.family'] = 'NanumGothic'
+
+# 마이너스 기호 깨짐 방지
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(page_title="365일 트레이딩 시뮬레이션", layout="centered")
